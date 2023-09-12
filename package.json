@@ -1,0 +1,16 @@
+{
+  "name": "devjs-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "startdb": "mongod --dbpath ./db"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "3.4.0",
+    "jade": "*",
+    "mongod": "^2.0.0",
+    "mongoose": ">= 2.6.5"
+  }
+}
