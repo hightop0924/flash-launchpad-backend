@@ -15,7 +15,10 @@ var mongoose = require('mongoose');
 // import the models
 var models = {
     User: require('./application/model/user')(mongoose),
-    Key: require('./application/model/key')(mongoose),
+    Action: require('./application/model/action')(mongoose),
+    Visitor: require('./application/model/visitor')(mongoose),
+    Launchpad: require('./application/model/launchpad')(mongoose),
+    Notification: require('./application/model/notification')(mongoose),
 };
 
 var app = express();

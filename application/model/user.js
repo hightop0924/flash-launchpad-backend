@@ -7,11 +7,12 @@
 module.exports = function (mongoose) {
 
     var UserSchema = new mongoose.Schema({
-        email: { type: String, unique: true },
-        password: { type: String },
-        firstName: {type: String},
-        lastName: {type: String},
-        login: {type: String, unique: true }
+        email: { type: String, unique: true, required: true },
+        password: { type: String, required: true},
+        name: {type: String, required: true},
+        // These are for reset password
+        // resetToken:String, 
+        // expireToken:Date,
     });
 
     var User = mongoose.model('User', UserSchema);

@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "startdb": "mongod --dbpath ./db"
+    "startdb": "mkdir db & mongod --dbpath ./db"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
     "express": "3.4.0",
     "jade": "*",
+    "jsonwebtoken": "^9.0.2",
     "mongod": "^2.0.0",
     "mongoose": ">= 2.6.5"
   }
